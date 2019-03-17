@@ -1,202 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Ibraheem Moosa's Personal Website</title>
-    <meta charset="UTF-8">
-</head>
+    <head>
+        <title>Ibraheem Moosa's Personal Website</title>
+        <meta charset="UTF-8">
+    </head>
 
-<body>
-    <h1>Ibraheem Moosa's Personal Website</h1>
-    <h2>Hello World.</h2>
-
-
-    <p>I am Ibraheem Muhammad Moosa. This is my personal website.</p>
-
-    <p>
-      I graduated from <a href="https://cse.buet.ac.bd">Bangladesh University of Engineering and Technology (BUET)</a><br>
-      obtaining my BSc in Computer Science and Engineering degree with major in Artificial Intelligence.
-    </p>
-
-    <p>
-      My research interest is in Machine Learning. I specially want to do <b>theoretical research in machine learning</b> to<br>
-      understand <b>why neural networks work</b> so well, what are <b>it's limits</b>,<br>
-      how to <b>improve the training process</b> of neural networks and<br>
-      applying deep learning for <b>learning representations from vast amount of data from multipe sources to perform multiple tasks</b>.<br>
-      I would also love to <b>apply machine learning</b> to interesting problems <b>in Bioinformatics</b>.
-    </p>
-
-    <p>
-      I am also intereseted in Functional Programming. I would love to find the relation between <a href="https://colah.github.io/posts/2015-09-NN-Types-FP/">FP and NN</a>.
-    </p>
-
-    <p>Otherwise my interest ranges from<br>
-      Philosophy to Physics to History to Literature to Art to Politics <br>
-      and everything else in between.<br>
-      Before I got into Computer Science I was a physics buff. <b>I have a dream of discovering something that have significant implications
-      for both Physics and Computer Science</b>.<br>
-      I love to read history books that deals with how the past has shaped our present.<br>
-      Another field of my interest is Philosophy. In the end I hope to shed some light on the hard problems of philosophy through my research in Computer Science.<br>
-      I love reading science fictions. My favourite authors are Kurt Vonnegut, Isaac Asimov and Philip K. Dick.
-    </p>
-
-    
-    <h2>Research</h2>
-    <dl>
-      <dt id="tndp"><b>A Heuristic Aided Stochastic Beam Search Algorithm for Solving the Transit Network Design Problem</b></dt>
-      <dd>
-	<b>Authors</b>: <a href="https://kai10.github.io/">Kazi Ashik Islam</a>, <b>Ibraheem Muhammad Moosa</b>, Jaiaid Mobin, <a href="https://cse.buet.ac.bd/faculty/facdetail.php?id=ali_nayeem">Muhammad Ali Nayeem</a> and <a href="http://msrahman.buet.ac.bd/"> M. Sohel Rahman</a>
-      </dd>
-      <dd>
-	<b>Current Status</b>: Accepted <a href="https://www.journals.elsevier.com/swarm-and-evolutionary-computation">
-	  Swarm and Evolutionary Computation, Elsevier </a><br>
-      </dd>
-      <dd>
-      <b>Link</b>: <a href="https://www.sciencedirect.com/science/article/abs/pii/S2210650218302414">Abstract</a>
-      </dd>
-      <dd>
-      <b>Viewable Link</b>:<a href="https://authors.elsevier.com/c/1Ygmw7sfCS-0lE">HTML Page</a>
-      </dd>
-	<p>
-        <b>Summary</b>:
-	  Designing efficient transit networks that fulfils the demand of passengers while maintaining constraints on the
-	  size of the network is a computationally hard problem. It can be thought of as a combinatorial optimization problem.
-	  Previous research focused on applying metaheuristic techniques such as Genetic Algorithm, Bee Colony Algorithm etc.
-	</p>
-	
-	<p>
-	  We designed a novel heuristic that can find good transit networks given the travel time and demand among
-	  bus terminals and constraints on number of routes and route length. Then we designed a mutation operator
-	  based on this heuristic for stochastic beam search.
-	</p>
-	
-	<p>
-	  Our experiments on benchmark datasets show that our heuristic significantly outperforms the previous metaheuristic approaches.
-	  <b>In particular our heuristic which runs in seconds significantly outperforms the state of the art metaheuristic
-	  algorithms that takes hours to run.</b> Our proposed stochastic beam search finds even better solutions while requiring computational
-	  resources similar to state of the art metaheuristic algorithms.
-	</p>
-      </dd>
-
-      <dt id="b-factor-prediction"><b>Predicting B-factors From Protein Sequence using Deep Learning</b></dt>
-      <dd><b>Authors</b>: <a href="https://sites.google.com/view/ahsantarique/">A. S. M. Ahsan-Ul-Haque</a>, <b>Ibraheem Muhammad Moosa</b> and <a href="http://msrahman.buet.ac.bd/"> M. Sohel Rahman</a></dd>
-      <dd><b>Current Status</b>: Ongoing</dd>
-      <dd>
-	<p>
-	<b>Summary</b>:
-	Tertiary structure of proteins are determined using X-ray Crystallography or NMR Spectroscopy. A byproduct of X-ray Crystallography is
-	the B-factor which is a measure of uncertainty in the determined positions of the atoms in the tertiary structure. One major source
-	of this uncertainty is thermal motions of atoms. Thus the b-factor of C-alpha atoms of the amino acids in a protein sequence can be
-	a good indicator of protein flexibility.
-	</p>
-
-	<p>
-	Since X-ray Crystallography is a costly experiment  and it is hard to crystalize many proteins, it is an interesting problem to <b>predict a
-	normalized b-factor for C-alpha atoms of each amino acid from the protein sequence alone</b>. It is to be noted that the gap between
-	the number of proteins discovered and the number of proteins for which X-ray Crystallography is performed is increasing every year.
-	</p>
-
-	<p>
-	From a theoretical point of view <b>this is a sequence to sequence learning problem</b>. Here the <b>input sequence is categorical</b>
-	(each element of the sequence is one of the twenty standard amino acids). And the <b>output sequence is real valued</b>.
-	</p>
-
-	<p>
-	Thus Recurrent Neural Networks which can deal with variable length sequences of input and output are very much appropriate for this problem.
-	We applied <b>Bidirectional LSTM Network</b> to this problem and found better results than previous approaches that only used sequence
-	data.
-	</p>
-
-	<p>
-	We note that none of the previous approaches applied deep learning. Also rather than considering the variable length sequence nature
-	of this problem they considered only fixed length windows of the sequence and applied classical machine learning algorithms (SVR,
-	Random Forest etc).
-	</p>
-
-	<p>
-	We are currently writing a paper describing our findings. Our future plan includes applying <b>Convolutional Neural Networks</b>
-	which are much faster than RNNs and can deal with variable length input when the input and out sizes are same (as in our case). Also
-	previous studies found that using evolutionary information in addition to the sequence significantly improves prediction. We plan to
-	include these information in our model.
-	</p>
-
-      </dd>
-    </dl>
-
-    <h2>A rather (not) long list of things I worked with</h2>
-    <dl>
-        <dt>C/C++</dt>
-        <dd>I've been writing programmes in C/C++ since 2012. 
-        It's the language in which I learned to program.<br>
-        Later I've used it in programming contests. My thesis on <a href="#tndp"><i>heuristic aided stochastic beam search algorithm for solving the transit network design problem</i></a> is coded in c++. <br>
-        <b>And recently I've been working on 
-        the codebase of chromium browser which is written in C++</b>.
-        </dd>
-        <dt>Python</dt>
-        <dd>I must say Python is one of my favorite languages. I've used python in many personal 
-        projects using <b>numpy, scipy, matplotlib, pandas, scikit-learn and pytorch</b>. <br>
-        My current research project <a href="#b-factor-prediction"><i>predicting b-factors from protein sequence using deep learning</i></a>
-        is developed in pytorch and scikit-learn.
-        </dd>
-        <dt><b>Haskell</b></dt>
-        <dd>
-        I genuinely enjoy writing programmes in Haskell. It taught me to think in a very different way from
-        traditional programming.<br> So far I haven't got to the advanced parts (monads etc)
-        yet. But I am working on it.<br>
-        <a href="https://github.com/ibraheem-moosa/haskell-comm">Haskell implementation of unix comm utility</a><br>
-        <a href="https://github.com/ibraheem-moosa/haskell-ninty-nine-problems">Ninety-nine problems I solved in Haskell</a>
-        </dd>
-        <dt>Java</dt>
-        <dd>I've also programmed in Java. One of the academic projects that I did in Java was P2P file sharing in LAN.<br>
-        Later I worked on two research projects in Java. In one project we worked with spatial database (R-Tree) <br>
-        to combine textual keywords and location data in a single query. (I workd as an intern)<br>
-        In another project we applied <a href="https://github.com/ibraheem-moosa/SSDFA"><i>scatter search to DNA fragment assembly problem.</i></a>
-        </dd>
-        <dt><b>Numpy Stack</b></dt>
-        <dd>
-        Apart from scipy, scikit-learn and matplotlib I've experience in many other libraries in numpy stack.<br>
-        I learnt <b>scikit-image</b> while doing assignments for <i>Digital Image Processing</i> course. Recently I've been<br>
-        learning <b>skorch</b>, <b>PyMC</b>, <b>astroML</b>. 
-        </dd>
-        <dt><b>Pytorch</b></dt>
-        <dd>
-          My current research project <a href="#b-factor-prediction"><i>predicting b-factors from protein sequence using deep learning</i></a> is coded in pytorch.<br>
-	  We have used custom pearson correlation coefficient loss in this project. You can find our pytorch implementation here.<br>
-        <a href="https://github.com/ibraheem-moosa/protein-bvalue-prediction/tree/pytorch_lstm_seq_pad">b-value-prediction</a>
-        </dd>
-	<dt><b>Linux</b></dt>
-	<dd>
-	  I have been using Linux as my primary OS for several years. My current setup is Arch Linux with XFCE. Recently I have been experimenting
-	  with NixOS.
-	</dd>
-	<dt><b>Raspberry Pi</b></dt>
-	<dd>
-	  I have experience working with Raspberry Pi in a robotics project.
-	  <a href="https://github.com/KAI10/Semi-Autonomous-Obstacle-Avoider">See here</a>.
-	</dd>
-        <dt>Objective-C</dt>
-        <dd>
-        I also have working expereince in Objecive-C. In my last job I worked on implementing firewall bypassing algorithm<br>
-        for a VOIP <b>iOS app</b>. There I got experience in low level network code in C too.
-        </dd>
-        <dt>Vala</dt>
-        <dd>
-        This is the language in which applications for elementary OS are written. I wrote a random number generator using von neumann algorithm.<br>
-        <a href="https://github.com/ibraheem-moosa/neumann">neumann</a>
-        </dd>
-        <dt>HTML</dt>
-        <dd>
-        I wrote this page in raw HTML. That's not much really I know. But I couldn't resist.
-        </dd>
-    </dl>
-    <h2>Thank you for visiting my website.</h2>
-
-    <h2>Contact Information</h2>
-     
+    <body>
+        <h1>Ibraheem Moosa's Personal Website</h1>
+        <h2>Hello World.</h2>
 
 
-    <p>If you want to talk about anything you can find me at
-      ibraheemmoosa1347 at gmail dot com or +8801677103158.
-    </p>
-</body>
+        <p>I am Ibraheem Muhammad Moosa. This is my personal website.</p>
+
+        <p>
+        I graduated from <a href="https://cse.buet.ac.bd">Bangladesh University of Engineering and Technology (BUET)</a><br>
+        obtaining my BSc in Computer Science and Engineering degree with major in Artificial Intelligence.
+        </p>
+
+        <p>
+        My research interest is in Machine Learning. I specially want to do <b>theoretical research in machine learning</b> to<br>
+        understand <b>why neural networks work</b> so well, what are <b>it's limits</b>,<br>
+        how to <b>improve the training process</b> of neural networks and<br>
+        applying deep learning for <b>learning representations from vast amount of data from multipe sources to perform multiple tasks</b>.<br>
+        I would also love to <b>apply machine learning</b> to interesting problems <b>in Bioinformatics</b>.
+        </p>
+
+        <p>
+        I am also intereseted in Functional Programming. I would love to find the relation between <a href="https://colah.github.io/posts/2015-09-NN-Types-FP/">FP and NN</a>.
+        </p>
+
+        <p>Otherwise my interest ranges from<br>
+        Philosophy to Physics to History to Literature to Art to Politics <br>
+        and everything else in between.<br>
+        Before I got into Computer Science I was a physics buff. <b>I have a dream of discovering something that have significant implications
+            for both Physics and Computer Science</b>.<br>
+        I love to read history books that deals with how the past has shaped our present.<br>
+        Another field of my interest is Philosophy. In the end I hope to shed some light on the hard problems of philosophy through my research in Computer Science.<br>
+        I love reading science fictions. My favourite authors are Kurt Vonnegut, Isaac Asimov and Philip K. Dick.
+        </p>
+
+
+        <h2>Research</h2>
+        <dl>
+            <dt id="tndp"><b>A Heuristic Aided Stochastic Beam Search Algorithm for Solving the Transit Network Design Problem</b></dt>
+            <dd>
+            <b>Authors</b>: <a href="https://kai10.github.io/">Kazi Ashik Islam</a>, <b>Ibraheem Muhammad Moosa</b>, Jaiaid Mobin, <a href="https://cse.buet.ac.bd/faculty/facdetail.php?id=ali_nayeem">Muhammad Ali Nayeem</a> and <a href="http://msrahman.buet.ac.bd/"> M. Sohel Rahman</a>
+            </dd>
+            <dd>
+            <b>Current Status</b>: Accepted <a href="https://www.journals.elsevier.com/swarm-and-evolutionary-computation">
+                Swarm and Evolutionary Computation, Elsevier </a><br>
+            </dd>
+            <dd>
+            <b>Link</b>: <a href="https://www.sciencedirect.com/science/article/abs/pii/S2210650218302414">Abstract</a>
+            </dd>
+            <dd>
+            <b>Viewable Link</b>:<a href="https://authors.elsevier.com/c/1Ygmw7sfCS-0lE">HTML Page</a>
+            </dd>
+            </b>
+            <p>
+            <dd>
+            <b>Summary</b>:
+            <p>
+            Designing efficient transit networks that fulfils the demand of passengers while maintaining constraints on the
+            size of the network is a computationally hard problem. It can be thought of as a combinatorial optimization problem.
+            Previous research focused on applying metaheuristic techniques such as Genetic Algorithm, Bee Colony Algorithm etc.
+            </p>
+
+            <p>
+            We designed a novel heuristic that can find good transit networks given the travel time and demand among
+            bus terminals and constraints on number of routes and route length. Then we designed a mutation operator
+            based on this heuristic for stochastic beam search.
+            </p>
+
+            <p>
+            Our experiments on benchmark datasets show that our heuristic significantly outperforms the previous metaheuristic approaches.
+            <b>In particular our heuristic which runs in seconds significantly outperforms the state of the art metaheuristic
+                algorithms that takes hours to run.</b> Our proposed stochastic beam search finds even better solutions while requiring computational
+            resources similar to state of the art metaheuristic algorithms.
+            </p>
+            </dd>
+
+            <dt id="b-factor-prediction"><b>Predicting B-factors From Protein Sequence using Deep Learning</b></dt>
+            <dd><b>Authors</b>: <a href="https://sites.google.com/view/ahsantarique/">A. S. M. Ahsan-Ul-Haque</a>, <b>Ibraheem Muhammad Moosa</b> and <a href="http://msrahman.buet.ac.bd/"> M. Sohel Rahman</a></dd>
+            <dd><b>Current Status</b>: Ongoing</dd>
+            <dd>
+            <p>
+            <b>Summary</b>:
+            Tertiary structure of proteins are determined using X-ray Crystallography or NMR Spectroscopy. A byproduct of X-ray Crystallography is
+            the B-factor which is a measure of uncertainty in the determined positions of the atoms in the tertiary structure. One major source
+            of this uncertainty is thermal motions of atoms. Thus the b-factor of C-alpha atoms of the amino acids in a protein sequence can be
+            a good indicator of protein flexibility.
+            </p>
+
+            <p>
+            Since X-ray Crystallography is a costly experiment  and it is hard to crystalize many proteins, it is an interesting problem to <b>predict a
+                normalized b-factor for C-alpha atoms of each amino acid from the protein sequence alone</b>. It is to be noted that the gap between
+            the number of proteins discovered and the number of proteins for which X-ray Crystallography is performed is increasing every year.
+            </p>
+
+            <p>
+            From a theoretical point of view <b>this is a sequence to sequence learning problem</b>. Here the <b>input sequence is categorical</b>
+            (each element of the sequence is one of the twenty standard amino acids). And the <b>output sequence is real valued</b>.
+            </p>
+
+            <p>
+            Thus Recurrent Neural Networks which can deal with variable length sequences of input and output are very much appropriate for this problem.
+            We applied <b>Bidirectional LSTM Network</b> to this problem and found better results than previous approaches that only used sequence
+            data.
+            </p>
+
+            <p>
+            We note that none of the previous approaches applied deep learning. Also rather than considering the variable length sequence nature
+            of this problem they considered only fixed length windows of the sequence and applied classical machine learning algorithms (SVR,
+            Random Forest etc).
+            </p>
+
+            <p>
+            We are currently writing a paper describing our findings. Our future plan includes applying <b>Convolutional Neural Networks</b>
+            which are much faster than RNNs and can deal with variable length input when the input and out sizes are same (as in our case). Also
+            previous studies found that using evolutionary information in addition to the sequence significantly improves prediction. We plan to
+            include these information in our model.
+            </p>
+
+            </dd>
+        </dl>
+
+        <h2>A rather (not) long list of things I worked with</h2>
+        <dl>
+            <dt>C/C++</dt>
+            <dd>I've been writing programmes in C/C++ since 2012. 
+            It's the language in which I learned to program.<br>
+            Later I've used it in programming contests. My thesis on <a href="#tndp"><i>heuristic aided stochastic beam search algorithm for solving the transit network design problem</i></a> is coded in c++. <br>
+            <b>And recently I've been working on 
+                the codebase of chromium browser which is written in C++</b>.
+            </dd>
+            <dt>Python</dt>
+            <dd>I must say Python is one of my favorite languages. I've used python in many personal 
+            projects using <b>numpy, scipy, matplotlib, pandas, scikit-learn and pytorch</b>. <br>
+            My current research project <a href="#b-factor-prediction"><i>predicting b-factors from protein sequence using deep learning</i></a>
+            is developed in pytorch and scikit-learn.
+            </dd>
+            <dt><b>Haskell</b></dt>
+            <dd>
+            I genuinely enjoy writing programmes in Haskell. It taught me to think in a very different way from
+            traditional programming.<br> So far I haven't got to the advanced parts (monads etc)
+            yet. But I am working on it.<br>
+            <a href="https://github.com/ibraheem-moosa/haskell-comm">Haskell implementation of unix comm utility</a><br>
+            <a href="https://github.com/ibraheem-moosa/haskell-ninty-nine-problems">Ninety-nine problems I solved in Haskell</a>
+            </dd>
+            <dt>Java</dt>
+            <dd>I've also programmed in Java. One of the academic projects that I did in Java was P2P file sharing in LAN.<br>
+            Later I worked on two research projects in Java. In one project we worked with spatial database (R-Tree) <br>
+            to combine textual keywords and location data in a single query. (I workd as an intern)<br>
+            In another project we applied <a href="https://github.com/ibraheem-moosa/SSDFA"><i>scatter search to DNA fragment assembly problem.</i></a>
+            </dd>
+            <dt><b>Numpy Stack</b></dt>
+            <dd>
+            Apart from scipy, scikit-learn and matplotlib I've experience in many other libraries in numpy stack.<br>
+            I learnt <b>scikit-image</b> while doing assignments for <i>Digital Image Processing</i> course. Recently I've been<br>
+            learning <b>skorch</b>, <b>PyMC</b>, <b>astroML</b>. 
+            </dd>
+            <dt><b>Pytorch</b></dt>
+            <dd>
+            My current research project <a href="#b-factor-prediction"><i>predicting b-factors from protein sequence using deep learning</i></a> is coded in pytorch.<br>
+            We have used custom pearson correlation coefficient loss in this project. You can find our pytorch implementation here.<br>
+            <a href="https://github.com/ibraheem-moosa/protein-bvalue-prediction/tree/pytorch_lstm_seq_pad">b-value-prediction</a>
+            </dd>
+            <dt><b>Linux</b></dt>
+            <dd>
+            I have been using Linux as my primary OS for several years. My current setup is Arch Linux with XFCE. Recently I have been experimenting
+            with NixOS.
+            </dd>
+            <dt><b>Raspberry Pi</b></dt>
+            <dd>
+            I have experience working with Raspberry Pi in a robotics project.
+            <a href="https://github.com/KAI10/Semi-Autonomous-Obstacle-Avoider">See here</a>.
+            </dd>
+            <dt>Objective-C</dt>
+            <dd>
+            I also have working expereince in Objecive-C. In my last job I worked on implementing firewall bypassing algorithm<br>
+            for a VOIP <b>iOS app</b>. There I got experience in low level network code in C too.
+            </dd>
+            <dt>Vala</dt>
+            <dd>
+            This is the language in which applications for elementary OS are written. I wrote a random number generator using von neumann algorithm.<br>
+            <a href="https://github.com/ibraheem-moosa/neumann">neumann</a>
+            </dd>
+            <dt>HTML</dt>
+            <dd>
+            I wrote this page in raw HTML. That's not much really I know. But I couldn't resist.
+            </dd>
+        </dl>
+        <h2>Thank you for visiting my website.</h2>
+
+        <h2>Contact Information</h2>
+
+
+
+        <p>If you want to talk about anything you can find me at
+        ibraheemmoosa1347 at gmail dot com or +8801677103158.
+        </p>
+    </body>
 </html>
