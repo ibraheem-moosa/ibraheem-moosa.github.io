@@ -1,1 +1,21 @@
-Page Under Construction.
+i<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>blah</title>
+</head>
+<body>
+<p>Blob image upload and view test</p>
+<input type="file" allow="image/*" onchange="display(this, this.files[0])"/>
+	<script>
+		function display(elt, f) {
+			var img=document.createElement("img");
+			img.src = URL.createObjectURL(f);
+			img.onload = function() {
+				URL.revokeObjectURL(this.src);
+			};
+			elt.parentNode.replaceChild(img, elt);
+		}
+	</script>
+</body>
+</html>
