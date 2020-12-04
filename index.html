@@ -6,6 +6,7 @@ i<!doctype html>
 </head>
 <body>
 <p>Blob image upload and view test</p>
+<a id="img_link">Image Link</a>
 <input type="file" allow="image/*" onchange="display(this, this.files[0])"/>
 	<script>
 		function display(elt, f) {
@@ -15,6 +16,9 @@ i<!doctype html>
 				URL.revokeObjectURL(this.src);
 			};
 			elt.parentNode.replaceChild(img, elt);
+			var link = document.getElementById("img_link");
+			link.href = img.src;
+			link.target = "_blank";
 		}
 	</script>
 </body>
