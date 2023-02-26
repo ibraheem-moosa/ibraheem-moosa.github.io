@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, I am Moosa. I am a 1st year Computer Science PhD student at Penn State University, supervised [Dr. Wenpeng Yin](https://www.wenpengyin.org/).
+Hi, I am ***Moosa***. I am a 1st year Computer Science PhD student at Penn State University, supervised [Dr. Wenpeng Yin](https://www.wenpengyin.org/).
 
 My current research focus is on understanding **In-context Learning** in language models, including how to use **Task Instructions** to achieve better results. I am also interested in trainign dynamics of language models and how that knowledge can be used to achieve better continual learning in these models.
 
