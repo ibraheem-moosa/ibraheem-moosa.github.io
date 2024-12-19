@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.wenpengyin.org/languagex-lab'>LanguageX Lab</a>, Department of Computer Science and Engineering, Penn State University, State College, PA
+subtitle: <a href='https://www.wenpengyin.org/ai4research-lab'>AI4Research Lab</a>, Department of Computer Science and Engineering, Penn State University, State College, PA
 
 profile:
   align: right
