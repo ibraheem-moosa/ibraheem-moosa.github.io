@@ -31,4 +31,4 @@ Some of the stuff that I enjoy other than my work:
 4. Trying out different cuisines and 
 5. Running/hiking.
 
-The best way to reach out to me is via [email](mailto:ibraheem-moosa@psu.edu).
+The best way to reach out to me is via [email](mailto:ibraheem.moosa@psu.edu).
